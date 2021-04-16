@@ -10,10 +10,6 @@ namespace MarsRovers
     {
         static void Main(string[] args)
         {
-            //Assumptions
-            //1. 
-            //2. 
-
             string input = @"5 5 
                              1 2 N
                              MMMMMMMMMM
@@ -22,7 +18,7 @@ namespace MarsRovers
                              5 5 S
                              MMLMRMLMRMLMRMLMRM";
 
-            string[] lines = input.Split(Environment.NewLine).Select(l => l.Trim()).ToArray();
+            string[] lines = input.Split("\n").Select(l => l.Trim()).ToArray();
 
             int surfaceWidth = Convert.ToInt32(lines[0].Split(" ")[0]);
             int surfaceHeigth = Convert.ToInt32(lines[0].Split(" ")[1]);
